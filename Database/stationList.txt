@@ -1,0 +1,36 @@
+name = Arau Station 
+place = Perlis 
+price = 0.0
+bus = 10
+passenger = 50
+
+name = KL Station 
+place = Kuala Lumpur 
+price = 0.0
+bus = 40
+passenger = 200
+
+name = KL Station 
+place = Kuala Lumpur 
+price = 0.0
+bus = 40
+passenger = 200
+
+name = Johor TBS 
+place = Johor Bahru 
+price = 0.0
+bus = 40
+passenger = 0
+
+name = Melaka TBS 
+place = Melaka 
+price = 0.0
+bus = 20
+passenger = 0
+
+name = Pahang 
+place = Pahang 
+price = 0.0
+bus = 30
+passenger = 0
+
