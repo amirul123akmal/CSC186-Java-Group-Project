@@ -37,5 +37,10 @@ public class Tickets extends Customer
         this.price = price;
     }
 
+    public String toString() {
+        return "Tickets [price=" + price + ", stationArrival=" + stationArrival + ", stationDepart=" + stationDepart
+                + "]";
+    }
+
     
 }

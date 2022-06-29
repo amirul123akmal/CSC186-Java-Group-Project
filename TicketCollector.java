@@ -86,11 +86,11 @@ public class TicketCollector {
                 FileWriter file = new FileWriter("Tickets/"+Integer.toString(counter++)+".txt");
                 PrintWriter writeFile = new PrintWriter(file);
                 writeFile.println("name = " + data.getName());
+                writeFile.println("ic = " + data.getIc());
                 writeFile.println("age = " + data.getAge());
                 writeFile.println("price = " + data.getPrice());
-                writeFile.println("stationArrival = " + data.getStationArrival());
                 writeFile.println("stationDepart = " + data.getStationDepart());
-                writeFile.println("ic = " + data.getIc());
+                writeFile.println("stationArrival = " + data.getStationArrival());
                 writeFile.close();
                 file.close();
             } catch (IOException e) {
