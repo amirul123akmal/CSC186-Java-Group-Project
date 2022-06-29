@@ -29,6 +29,7 @@ public class Bus_Station {
         place = StationLocation;
         amountBusProvided = providedBus;
         ticketCount = total;
+        price = stationPrice;
     }
     public Bus_Station(Bus_Station otherStation)
     {

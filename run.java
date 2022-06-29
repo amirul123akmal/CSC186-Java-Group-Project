@@ -12,18 +12,19 @@ public class run
 
         int menuChoose;
 
-        final String[] menu = {"Add Station", "View Stations", "View Bus", "View Tickets", "Generate Tickes", "Exit"}; 
+        final String[] menu = {"Admin", "View Stations", "View Bus", "View Tickets", "Generate Tickes", "Exit"}; 
         for(char user = 'y';user != 'n';)
         {   
+            t.clearConsole();
             for(int i = 0 ; i < menu.length ; i++)
                 System.out.println((i+1) + ". " + menu[i]);
             System.out.println();    
             menuChoose = in.nextInt();
             in.nextLine();
-            t.clearConsole();
-            if(menuChoose == 1) main.createBusStation();
+            if(menuChoose == 1) main.admin();
             if(menuChoose == 2) main.printAllSation();
             if(menuChoose == 3) main.printAllBus();
+            if(menuChoose == 4) customerTicket.printTicket();
             if(menuChoose == 5) customerTicket.generateTicket();
             if(menuChoose == menu.length )
                 break;

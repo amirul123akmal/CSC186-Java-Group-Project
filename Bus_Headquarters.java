@@ -8,8 +8,8 @@ public class Bus_Headquarters
     private int totalBus = 10;
     private double totalProfit, totalExpenses, totalSales; 
 
-    static Scanner in = new Scanner(System.in);
-    static DataCollector db = new DataCollector();
+    Scanner in = new Scanner(System.in);
+    DataCollector db = new DataCollector();
     Tools t = new Tools();
 
     // Constructors
@@ -60,6 +60,8 @@ public class Bus_Headquarters
     {
         for (Bus_Station a : listStation) 
             System.out.println(a+"");
+        System.out.println("\nPress Enter to continue...");
+        in.nextLine();
     }
     public void createBusStation()
     {
@@ -87,6 +89,35 @@ public class Bus_Headquarters
                 e.printStackTrace();
             }
             System.out.print("");
+        }
+    }
+    public void admin()
+    {
+        final String menu[] = {"Add Station", "Delete Station", "Exit"};
+        int input = 0;
+        t.clearConsole();
+        System.out.print("Enter password: ");
+        String pass = in.nextLine();
+        if(!pass.equalsIgnoreCase("ami nik muq az"))
+            return ; // return to main
+        for(;;)
+        {
+            for(int i = 1 ; i <= menu.length ; i++)
+                System.out.println(i + ". "+ menu[i-1]);
+            System.out.println();
+            input = in.nextInt();
+            in.nextLine();
+            switch(input)
+            {
+                case 1:
+                    createBusStation();
+                    break;
+                case 2:
+                    // removeBusStation();
+                    break;
+                default:
+                    return; // security
+            }
         }
     }
     public void finalize() // act as destructor (~ in c++)
