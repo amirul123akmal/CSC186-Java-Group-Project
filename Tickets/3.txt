@@ -1,4 +1,4 @@
-name = Amirul Akmal
+name = Amirul Akmal 
 ic = 030306160013
 age = 19
 price = 30.0
