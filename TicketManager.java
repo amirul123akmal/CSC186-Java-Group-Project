@@ -1,3 +1,4 @@
+import java.sql.SQLIntegrityConstraintViolationException;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -13,18 +14,30 @@ public class TicketManager {
     Scanner in = new Scanner(System.in);
     Tools t = new Tools();
 
-    /*
-     * Station Name = 12 
-     * Location = 8
-    */
-    int maxStation = 12, maxPlace = 8;
-    
     // Constructor
     public TicketManager(Bus_Headquarters HQ)
     {
         this.HQ = HQ;
         ticketList = ticketDB.getTicketsFromDB();
     }
+
+    // Private Method
+    private void beautyTicket(Tickets data)
+    {
+        final int ticketWidth = 40;
+        t.skip(ticketWidth, '+');
+        System.out.print("\n| Name: " + data.getName());
+        t.skip(ticketWidth - data.getName().length() - 9);
+        System.out.print("|\n| IC : " + data.getIc());
+        t.skip(ticketWidth - data.getIc().length() - 8);
+        System.out.print("|\n| Station Depart : " + data.getStationDepart());
+        t.skip(ticketWidth - data.getStationDepart().length() - 20);
+        System.out.print("|\n| Station Arrival : " + data.getStationArrival());
+        t.skip(ticketWidth - data.getStationArrival().length() - 21);
+        System.out.println("|");
+        t.skip(ticketWidth, '+');
+        System.out.println("\n");
+    }   
 
     // Public Method
     public void generateTicket()
@@ -74,12 +87,17 @@ public class TicketManager {
                 System.out.println("Station not found");
         }
         ticketList.add(new Tickets(name, ic, age, stationDepart, stationArrival, (priceA + priceB)));
+        ticketDB.storeTickets(ticketList);
     }
     public void printTicket()
     {
+        t.clearConsole();
+        System.out.print("Enter your IC: ");
+        String ic = in.nextLine();
         for(Tickets a : ticketList)
-            System.out.println(a +"");
-        System.out.println("\nPress Enter to continue...");
+            if(a.getIc().equals(ic)) // 1 Person may have multiple tickets
+                beautyTicket(a);
+        System.out.println("\n\n\nPress Enter to continue...");
         in.nextLine();
     }
     public void finalize()

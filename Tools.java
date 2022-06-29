@@ -39,12 +39,12 @@ public class Tools {
         }
         return maxes;
     }
-    private void skip(int i)
+    public void skip(int i)
     {
         for(int a = 0 ; a < i ; a++)
             System.out.print(" ");
     }
-    private void skip(int i, char a)
+    public void skip(int i, char a)
     {
         for(int b = 0 ; b < i; b++)
             System.out.print(a);

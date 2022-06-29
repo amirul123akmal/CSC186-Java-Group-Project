@@ -18,13 +18,7 @@ passenger = 0
 
 name = Melaka TBS 
 place = Melaka 
-price = 35.0
-bus = 20
-passenger = 0
-
-name = Pahang 
-place = Pahang 
-price = 45.0
-bus = 30
+price = 0.0
+bus = 50
 passenger = 0
 
