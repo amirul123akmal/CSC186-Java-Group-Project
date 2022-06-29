@@ -33,6 +33,8 @@ public class TicketManager {
         t.skip(ticketWidth - data.getStationDepart().length() - 20);
         System.out.print("|\n| Station Arrival : " + data.getStationArrival());
         t.skip(ticketWidth - data.getStationArrival().length() - 21);
+        System.out.print("|\n| Price: RM " + String.format("%.2f",data.getPrice()));
+        t.skip(ticketWidth - String.format("%.2f", data.getPrice()).length() - 13);
         System.out.println("|");
         t.skip(ticketWidth, '+');
         System.out.println("\n");
