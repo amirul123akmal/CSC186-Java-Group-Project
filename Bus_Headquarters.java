@@ -1,3 +1,4 @@
+import java.io.PrintStream;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -39,12 +40,40 @@ public class Bus_Headquarters
     {
         totalBus = a;
     }
+    
     // Methods (private)
     private void calculateProfit()
     {
         totalProfit = totalSales - totalExpenses;
     }
-    
+    private void createBusStation()
+    {
+        System.out.print("Station Name: ");
+        String name = in.nextLine();
+        System.out.print("Station Place: ");
+        String place = in.nextLine();
+        System.out.println("Station price: RM ");
+        double price = in.nextDouble();
+        System.out.println("Bus assigned: ");
+        int busses = in.nextInt();
+        in.nextLine();
+        totalBus += busses;
+        listStation.add(new Bus_Station(name, place, busses, price));
+    }
+    private void removeBusStation()
+    {
+        t.clearConsole();
+        t.printAllStation(listStation);
+        System.out.print("\nStation Name to be remove: ");
+        String name = in.nextLine();
+        for(Bus_Station a : listStation)
+            if(a.getName().equalsIgnoreCase(name))
+            {
+                listStation.remove(a);
+                break;
+            }
+    }
+
     // Methods(API) - Gives data instead of print it
     public ArrayList<Bus_Station> getAllStation()
     {
@@ -58,24 +87,9 @@ public class Bus_Headquarters
     }
     public void printAllSation()
     {
-        for (Bus_Station a : listStation) 
-            System.out.println(a+"");
+        t.printAllStation(listStation);
         System.out.println("\nPress Enter to continue...");
         in.nextLine();
-    }
-    public void createBusStation()
-    {
-        System.out.print("Station Name: ");
-        String name = in.nextLine();
-        System.out.print("Station Place: ");
-        String place = in.nextLine();
-        System.out.println("Station price: RM ");
-        double price = in.nextDouble();
-        System.out.println("Bus assigned: ");
-        int busses = in.nextInt();
-        in.nextLine();
-        totalBus += busses;
-        listStation.add(new Bus_Station(name, place, busses, price));
     }
     public void printAllBus()
     {
@@ -113,7 +127,7 @@ public class Bus_Headquarters
                     createBusStation();
                     break;
                 case 2:
-                    // removeBusStation();
+                    removeBusStation();
                     break;
                 default:
                     return; // security

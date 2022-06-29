@@ -2,7 +2,12 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class TicketManager {
-    Bus_Headquarters HQ;
+    /*
+        - must use this (Bus_Headquarters HQ) at other class
+        - Class as parameter will pass by reference
+        - Any changes made to the data will be recognize to all classes
+    */ 
+    Bus_Headquarters HQ; 
     ArrayList<Tickets> ticketList = new ArrayList<>();
     TicketCollector ticketDB = new TicketCollector();
     Scanner in = new Scanner(System.in);
@@ -21,50 +26,6 @@ public class TicketManager {
         ticketList = ticketDB.getTicketsFromDB();
     }
 
-    // Private method
-    private void getLenght()
-    {
-        for(Bus_Station a : HQ.getAllStation())
-        {
-            if(a.getName().length() > maxStation)
-                maxStation = a.getName().length();
-            if(a.getPlace().length() > maxPlace)
-                maxPlace = a.getPlace().length();
-        }
-
-    }
-    private void skip(int i)
-    {
-        for(int a = 0 ; a < i ; a++)
-            System.out.print(" ");
-    }
-    private void skip(int i, char a)
-    {
-        for(int b = 0 ; b < i; b++)
-            System.out.print(a);
-    }
-    private void printAllStation()
-    {
-        getLenght();
-        skip(maxPlace + maxStation + 5, '+');
-        System.out.print("\n| Station Name");
-        skip(maxStation - 12);
-        System.out.print("| Location");
-        skip(maxPlace - 8);
-        System.out.println("|");
-        skip(maxPlace + maxStation + 5, '+');
-        System.out.println();
-        for(Bus_Station bus : HQ.getAllStation())
-        {
-            System.out.print("| " + bus.getName());
-            skip(maxStation - bus.getName().length());
-            System.out.print("| " + bus.getPlace());
-            skip(maxStation - bus.getPlace().length());
-            System.out.println("| ");
-        }
-        skip(maxPlace + maxStation + 5, '+');
-    }
-
     // Public Method
     public void generateTicket()
     {
@@ -73,7 +34,7 @@ public class TicketManager {
         stationArrival = stationDepart = "";
         t.clearConsole();
         boolean enable = true;
-        printAllStation();
+        t.printAllStation(HQ.getAllStation());
         System.out.print("\n\nName: ");
         name = in.nextLine();
         System.out.print("IC: ");
