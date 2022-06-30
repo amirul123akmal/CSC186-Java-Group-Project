@@ -1,5 +1,19 @@
+import java.rmi.server.ObjID;
 import java.util.ArrayList;
 import java.util.Scanner;
+import java.util.Vector;
+import java.util.WeakHashMap;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JOptionPane;
+import javax.swing.JPanel;
+import javax.swing.JScrollPane;
+import javax.swing.JTable;
+import javax.swing.table.DefaultTableModel;
+
+import java.awt.GridLayout;
 
 public class Bus_Headquarters
 {
@@ -11,10 +25,14 @@ public class Bus_Headquarters
     Scanner in = new Scanner(System.in);
     DataCollector db = new DataCollector();
     Tools t = new Tools();
+    JFrame frame;
+    JPanel window;
 
     // Constructors
-    public Bus_Headquarters()
+    public Bus_Headquarters(JFrame frameFromMain, JPanel jpanelFromMain)
     {
+        frame = frameFromMain;
+        window = jpanelFromMain;
         totalAccumulativePassenger = 0;
         listStation = db.getStationFromDB();
         /*
@@ -99,46 +117,56 @@ public class Bus_Headquarters
     }
     public void printAllBus()
     {
+        JPanel bus = new JPanel();
+        JLabel label = new JLabel("LIST ALL BUS AVAILABLE");
+        JTable table  =new JTable();
+        JButton exit = new JButton("Exit");
+        exit.addActionListener(e -> {
+            frame.remove(bus);
+            t.frameOri();
+        });
+        DefaultTableModel model = (DefaultTableModel)table.getModel();
+        model.addColumn("Station Name");
+        model.addColumn("AMOUNT OF BUS AVAILABLE");
         for(Bus_Station a : listStation)
-        {
-            try {
-                t.clearConsole();
-                System.out.println("Station Name: " +a.getName());
-                System.out.println("Bus Quantity: " +a.getBusAmount());
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
-            System.out.print("");
-        }
+            model.addRow(new Object[]{a.getName(), Integer.toString(a.getBusAmount())});
+        JScrollPane scroll = new JScrollPane();
+        scroll.setViewportView(table);
+        bus.add(label);
+        bus.add(scroll);
+        bus.add(exit);
+        frame.remove(window);
+        frame.add(bus);
+        frame.setSize(frame.getSize().width - 100, frame.getSize().height + 200);
+        t.frameUpdate();
     }
     public void admin()
     {
-        final String menu[] = {"Add Station", "Delete Station", "Exit"};
-        int input = 0;
-        t.clearConsole();
-        System.out.print("Enter password: ");
-        String pass = in.nextLine();
-        if(!pass.equalsIgnoreCase("ami nik muq az"))
-            return ; // return to main
-        for(;;)
-        {
-            for(int i = 1 ; i <= menu.length ; i++)
-                System.out.println(i + ". "+ menu[i-1]);
-            System.out.println();
-            input = in.nextInt();
-            in.nextLine();
-            switch(input)
-            {
-                case 1:
-                    createBusStation();
-                    break;
-                case 2:
-                    removeBusStation();
-                    break;
-                default:
-                    return; // security
-            }
-        }
+        String password = JOptionPane.showInputDialog(frame,"Enter Password: " );
+        if(!password.equalsIgnoreCase("ami nik muq az"))
+            return ;
+        frame.remove(window);
+        JPanel admin = new JPanel(new GridLayout(2, 3));
+        admin.add(new JLabel());
+        JLabel label = new JLabel("ADMINISTRATION SECTION");
+        admin.add(label);
+        admin.add(new JLabel());
+        JButton b1 = new JButton("Add Station");
+        b1.addActionListener(e -> createBusStation());
+        b1.setSize(20, 30);
+        admin.add(b1);
+        JButton b2 = new JButton("Remove Station");
+        b2.addActionListener(e -> removeBusStation());
+        admin.add(b2);
+        JButton b3 = new JButton("Exit");
+        b3.addActionListener(e -> {
+            frame.remove(admin);
+            t.frameOri();
+        });
+
+        admin.add(b3);
+        frame.add(admin);
+        t.frameUpdate();
     }
     public void finalize() // act as destructor (~ in c++)
     {
