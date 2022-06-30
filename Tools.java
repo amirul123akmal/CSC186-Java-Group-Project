@@ -1,7 +1,36 @@
 import java.io.IOException;
 import java.util.ArrayList;
 
+import javax.swing.JFrame;
+import javax.swing.JPanel;
 public class Tools {
+    static JFrame frame;
+    static JPanel window;
+    int width, height;
+    public Tools(){};
+    public Tools(JFrame fromMain, JPanel j)
+    {
+        frame = fromMain;
+        window = j;
+        width = frame.getSize().width;
+        height = frame.getSize().height;
+    }
+
+    // Private method
+    private int[] getLenght(ArrayList<Bus_Station> data)
+    {
+        int[] maxes = {0, 0};
+        for(Bus_Station a : data)
+        {
+            if(a.getName().length() > maxes[0])
+                maxes[0] = a.getName().length();
+            if(a.getPlace().length() > maxes[1])
+                maxes[1] = a.getPlace().length();
+        }
+        return maxes;
+    }
+
+    // Public method
     public void clearConsole()
     {
         // Clearing consoles
@@ -25,19 +54,6 @@ public class Tools {
          */
         // String fulltext = "";
         
-    }
-
-    private int[] getLenght(ArrayList<Bus_Station> data)
-    {
-        int[] maxes = {0, 0};
-        for(Bus_Station a : data)
-        {
-            if(a.getName().length() > maxes[0])
-                maxes[0] = a.getName().length();
-            if(a.getPlace().length() > maxes[1])
-                maxes[1] = a.getPlace().length();
-        }
-        return maxes;
     }
     public void skip(int i)
     {
@@ -69,5 +85,15 @@ public class Tools {
             System.out.println("| ");
         }
         skip(max[1] + max[0] + 5, '+');
+    }
+    public void frameUpdate()
+    {
+        frame.validate();
+        frame.repaint();
+    }
+    public void frameOri()
+    {
+        frame.add(window);
+        frameUpdate();
     }
 }
