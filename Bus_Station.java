@@ -16,12 +16,14 @@ public class Bus_Station {
     {
         name = StationName;
         place = StationLocation;
+        price = stationPrice;
     }
     public Bus_Station(String StationName, String StationLocation, int providedBus, double stationPrice)
     {
         name = StationName;
         place = StationLocation;
         amountBusProvided = providedBus;
+        price = stationPrice;
     }
     public Bus_Station(String StationName, String StationLocation, int providedBus, double stationPrice, int total )
     {

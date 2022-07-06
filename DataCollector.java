@@ -33,14 +33,14 @@ public class DataCollector {
                 {
                     name = "";
                     for(int i = 2 ; i < a.length ; i++)
-                        name += a[i] + " ";
+                        name += a[i] + (i != a.length-1 ? " " :  "");
                     continue;
                 }
                 else if(attr.equals("place")) 
                 {
                     place = "";
                     for(int i = 2 ; i < a.length ; i++)
-                        place += a[i] + " ";
+                        place += a[i] + (i != a.length-1 ? " " :  "");
                     continue;
                 }
                 else if(attr.equals("price")) 

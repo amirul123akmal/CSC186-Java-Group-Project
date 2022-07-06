@@ -31,7 +31,7 @@ public class TicketCollector {
                     {
                         name = "";
                         for(int i = 2 ; i < array.length ; i++)
-                            name += array[i] + " ";
+                            name += array[i] + (i != array.length-1 ? " " :  "");
                         continue;
                     }
                     else if(attr.equals("ic")) 
@@ -53,14 +53,14 @@ public class TicketCollector {
                     {
                         stationDepart = "";
                         for(int i = 2 ; i < array.length ; i++)
-                            stationDepart += array[i] + " ";
+                            stationDepart += array[i] + (i != array.length-1 ? " " :  "");
                         continue;
                     }
                     else if(attr.equals("stationArrival")) 
                     {
                         stationArrival = "";
                         for(int i = 2 ; i < array.length ; i++)
-                            stationArrival += array[i] + " ";
+                            stationArrival += array[i] + (i != array.length-1 ? " " :  "");
                         TicketData.add(new Tickets(name, ic, age, stationDepart, stationArrival, price));
                         continue;
                     }

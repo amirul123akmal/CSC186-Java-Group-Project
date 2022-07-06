@@ -69,7 +69,7 @@ public class Bus_Headquarters
         System.out.print("\nStation Name to be remove: ");
         String name = in.nextLine();
         for(Bus_Station a : listStation)
-            if(a.getName().equalsIgnoreCase(name + " "))
+            if(a.getName().equalsIgnoreCase(name))
             {
                 listStation.remove(a);
                 break;

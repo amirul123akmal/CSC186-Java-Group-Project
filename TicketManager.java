@@ -60,7 +60,6 @@ public class TicketManager {
         {
             System.out.print("Choose station Depart: ");
             stationDepart = in.nextLine();
-            stationDepart += " ";
             for(Bus_Station a : HQ.getAllStation())
                 if(a.getName().equalsIgnoreCase(stationDepart))
                 {
@@ -75,7 +74,11 @@ public class TicketManager {
         {
             System.out.print("Choose station Arrival: ");
             stationArrival = in.nextLine();
-            stationArrival += " ";
+            if(stationArrival.equalsIgnoreCase(stationDepart))
+            {
+                System.out.println("Station Arrival cannot be same as Station Departing");
+                continue;
+            }
             for(Bus_Station a : HQ.getAllStation())
             {
                 if(a.getName().equalsIgnoreCase(stationArrival))
