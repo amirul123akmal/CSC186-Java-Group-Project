@@ -1,24 +1,60 @@
-name = Arau Station 
-place = Perlis 
+name = Arau Station
+place = Perlis
 price = 40.0
 bus = 10
 passenger = 50
 
-name = KL Station 
-place = Kuala Lumpur 
+name = KL Station
+place = Kuala Lumpur
 price = 30.0
 bus = 40
 passenger = 200
 
-name = Johor TBS 
-place = Johor Bahru 
+name = Johor TBS
+place = Johor Bahru
 price = 25.0
 bus = 40
 passenger = 0
 
-name = Melaka TBS 
-place = Melaka 
-price = 0.0
+name = Melaka TBS
+place = Melaka
+price = 19.0
 bus = 50
+passenger = 0
+
+name = Pahang
+place = Pahang
+price = 25.0
+bus = 20
+passenger = 0
+
+name = Terengganu TBS
+place = Terengganu
+price = 15.0
+bus = 20
+passenger = 0
+
+name = Perlis Bus
+place = Perlis
+price = 24.0
+bus = 40
+passenger = 0
+
+name = arau
+place = arau
+price = 20.0
+bus = 2
+passenger = 0
+
+name = Tasek Gelugor
+place = Penang
+price = 23.0
+bus = 4
+passenger = 0
+
+name = UiTM Arau
+place = Perlis
+price = 20.0
+bus = 4
 passenger = 0
 

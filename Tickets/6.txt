@@ -1,0 +1,6 @@
+name = sdce 
+ic = 12
+age = 1
+price = 50.0
+stationDepart = Pahang 
+stationArrival = Pahang 

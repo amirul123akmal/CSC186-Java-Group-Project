@@ -1,5 +1,5 @@
-name = akmal akmal 
-ic = 030306160013
+name = nik nik 
+ic = 12345
 age = 20
 price = 45.0
 stationDepart = uitm arau 

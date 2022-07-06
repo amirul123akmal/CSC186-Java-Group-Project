@@ -1,0 +1,6 @@
+name = akmal 
+ic = 030306160013
+age = 19
+price = 43.0
+stationDepart = tasek gelugor 
+stationArrival = arau 

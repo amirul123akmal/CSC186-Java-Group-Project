@@ -1,0 +1,6 @@
+name = harith 
+ic = 030925100247
+age = 19
+price = 55.0
+stationDepart = kl station 
+stationArrival = pahang 

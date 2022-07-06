@@ -1,0 +1,6 @@
+name = muq 
+ic = 2345
+age = 12
+price = 80.0
+stationDepart = Arau Station 
+stationArrival = Arau Station 

@@ -1,0 +1,6 @@
+name = izzul Hadi 
+ic = 123456
+age = 20
+price = 25.0
+stationDepart = Johor TBS 
+stationArrival = Melaka TBS 

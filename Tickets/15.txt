@@ -1,0 +1,6 @@
+name = ilman 
+ic = 123456789
+age = 20
+price = 44.0
+stationDepart = Johor TBS 
+stationArrival = Melaka TBS 

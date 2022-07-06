@@ -1,0 +1,6 @@
+name = muhammad azwar harith 
+ic = 23141433
+age = 12
+price = 70.0
+stationDepart = Arau Station 
+stationArrival = KL Station 
