@@ -1,6 +1,6 @@
-name = amirul 
-ic = 030306160013
-age = 15
-price = 43.0
-stationDepart = arau 
-stationArrival = tasek gelugor 
+name = ilman
+ic = 123456789
+age = 20
+price = 44.0
+stationDepart = Johor TBS
+stationArrival = Melaka TBS

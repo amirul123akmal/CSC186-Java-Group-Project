@@ -1,6 +1,6 @@
-name = Amirul Akmal 
+name = Amirul Akmal
 ic = 030306160013
 age = 19
 price = 65.0
-stationDepart = Arau Station 
-stationArrival = Johor TBS 
+stationDepart = Arau Station
+stationArrival = Johor TBS

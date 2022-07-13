@@ -1,6 +1,6 @@
-name = muhammad azwar harith 
-ic = 23141433
-age = 12
-price = 70.0
-stationDepart = Arau Station 
-stationArrival = KL Station 
+name = amirul amirul
+ic = 030306160013
+age = 23
+price = 45.0
+stationDepart = unimap
+stationArrival = uitm arau

@@ -1,6 +1,6 @@
-name = nik 
-ic = 1234
-age = 12
-price = 47.0
-stationDepart = Sof 
-stationArrival = Perlis bus 
+name = amirul akmal
+ic = 030306160013
+age = 23
+price = 45.0
+stationDepart = unimap
+stationArrival = uitm arau

@@ -1,6 +1,6 @@
-name = akmal akmal 
-ic = 030306160013
-age = 20
-price = 45.0
-stationDepart = uitm arau 
-stationArrival = unimap 
+name = azwar
+ic = 1234
+age = 12
+price = 65.0
+stationDepart = Arau Station
+stationArrival = Pahang

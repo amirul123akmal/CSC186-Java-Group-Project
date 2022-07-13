@@ -1,6 +1,6 @@
-name = izzul Hadi 
-ic = 123456
-age = 20
-price = 25.0
-stationDepart = Johor TBS 
-stationArrival = Melaka TBS 
+name = Syafiq
+ic = 12345678912
+age = 19
+price = 55.0
+stationDepart = KL Station
+stationArrival = Johor TBS

@@ -1,6 +1,6 @@
-name = amirul amirul 
-ic = 030306160013
-age = 23
-price = 45.0
-stationDepart = unimap 
-stationArrival = uitm arau 
+name = oi
+ic = 789
+age = 12
+price = 46.0
+stationDepart = Sof
+stationArrival = Sof

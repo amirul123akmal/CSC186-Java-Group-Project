@@ -1,6 +1,6 @@
-name = muq 
-ic = 2345
-age = 12
-price = 80.0
-stationDepart = Arau Station 
-stationArrival = Arau Station 
+name = amirul
+ic = 030306160013
+age = 15
+price = 43.0
+stationDepart = arau
+stationArrival = tasek gelugor

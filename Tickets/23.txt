@@ -1,0 +1,6 @@
+name = amirul akmal
+ic = 030306160013
+age = 19
+price = 59.0
+stationDepart = Arau station
+stationArrival = Melaka TBS

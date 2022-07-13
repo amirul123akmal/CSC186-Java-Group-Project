@@ -1,6 +1,6 @@
-name = sdce 
-ic = 12
-age = 1
-price = 50.0
-stationDepart = Pahang 
-stationArrival = Pahang 
+name = akmal
+ic = 030306160013
+age = 19
+price = 43.0
+stationDepart = tasek gelugor
+stationArrival = arau

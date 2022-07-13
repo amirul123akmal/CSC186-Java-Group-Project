@@ -1,6 +1,6 @@
-name = ilman 
-ic = 123456789
-age = 20
-price = 44.0
-stationDepart = Johor TBS 
-stationArrival = Melaka TBS 
+name = ad
+ic = 1234
+age = 12
+price = 43.0
+stationDepart = arau
+stationArrival = tasek gelugor
