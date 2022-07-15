@@ -99,17 +99,19 @@ public class Bus_Headquarters
     }
     public void printAllBus()
     {
+        t.clearConsole();
         for(Bus_Station a : listStation)
         {
             try {
-                t.clearConsole();
                 System.out.println("Station Name: " +a.getName());
-                System.out.println("Bus Quantity: " +a.getBusAmount());
+                System.out.println("Bus Quantity: " +a.getBusAmount() + "\n");
             } catch (Exception e) {
                 e.printStackTrace();
             }
             System.out.print("");
         }
+        System.out.print("Press Enter to continue...");
+        in.nextLine();
     }
     public void admin()
     {

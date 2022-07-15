@@ -65,7 +65,7 @@ public class Tools {
             System.out.print("| " + bus.getName());
             skip(max[0] - bus.getName().length());
             System.out.print("| " + bus.getPlace());
-            skip(max[0] - bus.getPlace().length());
+            skip(max[1] - bus.getPlace().length());
             System.out.println("| ");
         }
         skip(max[1] + max[0] + 5, '+');

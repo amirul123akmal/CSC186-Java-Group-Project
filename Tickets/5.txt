@@ -1,6 +1,6 @@
-name = amirul
-ic = 030306160013
-age = 15
+name = ad
+ic = 1234
+age = 12
 price = 43.0
 stationDepart = arau
 stationArrival = tasek gelugor

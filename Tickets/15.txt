@@ -1,6 +1,6 @@
-name = ad
+name = azwar
 ic = 1234
 age = 12
-price = 43.0
-stationDepart = arau
-stationArrival = tasek gelugor
+price = 65.0
+stationDepart = Arau Station
+stationArrival = Pahang

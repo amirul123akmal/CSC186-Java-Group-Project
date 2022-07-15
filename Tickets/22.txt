@@ -1,6 +1,6 @@
-name = nik
+name = muq
 ic = 2345
 age = 12
-price = 65.0
-stationDepart = arau station
-stationArrival = pahang
+price = 80.0
+stationDepart = Arau Station
+stationArrival = Arau Station

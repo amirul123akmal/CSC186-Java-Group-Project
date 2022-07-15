@@ -1,6 +1,6 @@
-name = sdce
-ic = 12
-age = 1
-price = 50.0
-stationDepart = Pahang
-stationArrival = Pahang
+name = amirul akmal
+ic = 030306160013
+age = 23
+price = 45.0
+stationDepart = unimap
+stationArrival = uitm arau

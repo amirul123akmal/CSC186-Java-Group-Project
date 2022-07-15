@@ -1,6 +1,6 @@
-name = Amirul Akmal
+name = amirul
 ic = 030306160013
-age = 19
-price = 30.0
-stationDepart = KL Station
-stationArrival = Melaka TBS
+age = 15
+price = 43.0
+stationDepart = arau
+stationArrival = tasek gelugor

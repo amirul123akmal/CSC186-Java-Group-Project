@@ -1,6 +1,6 @@
-name = ilman
-ic = 123456789
+name = akmal akmal
+ic = 030306160013
 age = 20
-price = 44.0
-stationDepart = Johor TBS
-stationArrival = Melaka TBS
+price = 45.0
+stationDepart = uitm arau
+stationArrival = unimap

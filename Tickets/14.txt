@@ -1,6 +1,6 @@
-name = oit
-ic = 7654
-age = 12
-price = 13348.0
-stationDepart = ami
-stationArrival = perlis bus
+name = amirul akmal
+ic = 030306160013
+age = 19
+price = 59.0
+stationDepart = Arau station
+stationArrival = Melaka TBS

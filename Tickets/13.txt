@@ -1,6 +1,6 @@
-name = oi
-ic = 789
+name = nik
+ic = 2345
 age = 12
-price = 46.0
-stationDepart = Sof
-stationArrival = Sof
+price = 65.0
+stationDepart = arau station
+stationArrival = pahang

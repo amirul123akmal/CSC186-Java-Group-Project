@@ -1,6 +1,6 @@
-name = Syafiq
-ic = 12345678912
-age = 19
-price = 55.0
-stationDepart = KL Station
-stationArrival = Johor TBS
+name = sdce
+ic = 12
+age = 1
+price = 50.0
+stationDepart = Pahang
+stationArrival = Pahang

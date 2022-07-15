@@ -1,6 +1,6 @@
-name = akmal akmal
-ic = 030306160013
+name = izzul Hadi
+ic = 123456
 age = 20
-price = 45.0
-stationDepart = uitm arau
-stationArrival = unimap
+price = 25.0
+stationDepart = Johor TBS
+stationArrival = Melaka TBS
