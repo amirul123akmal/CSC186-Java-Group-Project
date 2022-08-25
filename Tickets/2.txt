@@ -1,6 +1,6 @@
-name = amirul amirul
+name = akmal
 ic = 030306160013
-age = 23
-price = 45.0
-stationDepart = unimap
-stationArrival = uitm arau
+age = 19
+price = 43.0
+stationDepart = tasek gelugor
+stationArrival = arau

@@ -1,0 +1,6 @@
+name = muqri afif
+ic = 1234567
+age = 19
+price = 40.0
+stationDepart = arau
+stationArrival = UiTM arau

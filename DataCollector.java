@@ -66,6 +66,7 @@ public class DataCollector {
         }
         
     }
+    
     public ArrayList<Bus_Station> getStationFromDB()
     {
         return list;

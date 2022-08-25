@@ -1,6 +1,6 @@
-name = hi
-ic = 4567
-age = 12
-price = 47.0
-stationDepart = Perlis Bus
-stationArrival = sof
+name = amirul
+ic = 030306160013
+age = 15
+price = 43.0
+stationDepart = arau
+stationArrival = tasek gelugor

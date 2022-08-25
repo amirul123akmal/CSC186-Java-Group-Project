@@ -16,6 +16,14 @@ public class Tickets extends Customer
         this.stationDepart = stationDepart;
         this.price = price;
     }
+    public Tickets(Tickets copy)
+    {
+        // For tickets from DB
+        super(copy.getName(), copy.getIc(), copy.getAge());
+        this.stationArrival = copy.getStationArrival();
+        this.stationDepart = copy.getStationDepart();
+        this.price = copy.getPrice();
+    }
     
     // Setters Getters
     public String getStationDepart() {
@@ -41,6 +49,4 @@ public class Tickets extends Customer
         return "Tickets [price=" + price + ", stationArrival=" + stationArrival + ", stationDepart=" + stationDepart
                 + "]";
     }
-
-    
 }

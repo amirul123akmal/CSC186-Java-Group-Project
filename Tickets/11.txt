@@ -1,6 +1,6 @@
-name = harith
-ic = 030925100247
-age = 19
-price = 55.0
-stationDepart = kl station
-stationArrival = pahang
+name = muhammad azwar harith
+ic = 23141433
+age = 12
+price = 70.0
+stationDepart = Arau Station
+stationArrival = KL Station

@@ -1,6 +1,6 @@
-name = oit
-ic = 7654
-age = 12
-price = 13348.0
-stationDepart = ami
-stationArrival = perlis bus
+name = Syafiq
+ic = 12345678912
+age = 19
+price = 55.0
+stationDepart = KL Station
+stationArrival = Johor TBS

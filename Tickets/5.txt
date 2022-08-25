@@ -1,6 +1,6 @@
-name = ad
-ic = 1234
-age = 12
-price = 43.0
-stationDepart = arau
-stationArrival = tasek gelugor
+name = akmal akmal
+ic = 030306160013
+age = 20
+price = 45.0
+stationDepart = uitm arau
+stationArrival = unimap
